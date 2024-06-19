@@ -22,3 +22,13 @@ def convert_seconds(seconds):
  
 bleh, blah, bluh = convert_seconds(5000)
 print(bleh, blah, bluh)
+
+
+def hint_username(username):
+    if len(username) < 3 :
+        print("Username needs to be more than 3 characters long")
+    else : 
+        print("Valid username")
+
+hint_username("12")
+hint_username("123")
