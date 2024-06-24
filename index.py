@@ -186,3 +186,12 @@
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
+# # Some use of .join
+# greetings = ["Hello", "world", "!"]
+# print(" ".join(greetings)) # Prints "Hello world !" Notice the addition of the space at the end of world before !
+
+# # We can concatonate instead
+# greetingTwo = ["Hello", "world"]
+# print(" ".join(greetingTwo) + "!")
+
+#--------------------------------------------------------------------------------------------------------------------------------
