@@ -113,13 +113,13 @@
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
-#  For loop examples. 
+#  # For loop examples. 
 # for x in range(5):
 #     print(x)
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
-# For loop in a function
+# # For loop in a function
 # def printFive():
 #     for x in range(5):
 #         print("hi", x)
@@ -128,7 +128,7 @@
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
-# An example using an array of numbers
+# # An example using an array of numbers
 # values = [ 23,51,64,25,99,65 ]
 # sum = 0
 # length = 0
@@ -139,7 +139,7 @@
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
-# A for loop that jumps each 10th number and uses a function
+# # A for loop that jumps each 10th number and uses a function
 # def to_celsius(x):
 #   return (x-32)*5/9
 
@@ -148,13 +148,13 @@
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
-# If we want to count backwards we have to use the 3rd argument to tell the for loop to look for a negative number range.
+# # If we want to count backwards we have to use the 3rd argument to tell the for loop to look for a negative number range.
 # for x in range(1, -11, -1):
 #     print(x) # Prints 1 to -10
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
-# Lets make some dominoes
+# # Lets make some dominoes
 # for left in range(7):
 #     for right in range(left, 7):
 #         print("[" + str(left) + "|" + str(right) + "]", end=" ") # The end argument here defines how the print function will end. By default it makes a newline. Where now we define the newline character to be a space. 
@@ -162,7 +162,7 @@
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
-# Making a nested loop for pairings of names in all orders whilst not repeating same name against itself. 
+# # Making a nested loop for pairings of names in all orders whilst not repeating same name against itself. 
 # teams = [ "Pandas", "Tigers", "Bears", "Eagles"]
 # for home_team in teams:
 #     for away_teams in teams:
@@ -171,12 +171,18 @@
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
-# Some slicing using a colon
+# #Some slicing using a colon
 # string1 = "Greetings, Earthlings" # One long string
 # print(string1[0])   # Prints “G”
 # print(string1[4:8]) # Prints “ting”
 # print(string1[11:]) # Prints “Earthlings”
 # print(string1[:5])  # Prints “Greet”
+# print(string1[-10:])  # Prints “Earthlings but counts backwards from end of string”
+
+# # This is using :: which represents a stride
+# print(string1[0::2]) # Prints “Getns atlns” Every second character starting from 0
+# print(string1[::-1]) # Prints “sgnilhtraE ,sgniteerG” Prints every charcater backwards. No full range set. 
+# print(string1[9::-1]) # Prints “sgniteerG” Prints every charcater backwards from index 9 
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
