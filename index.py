@@ -1,7 +1,10 @@
 # from math import floor
 
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # print("Hello World")
+
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # #A small program to add two numbers
 # num1 = 10
@@ -12,6 +15,8 @@
 
 # #Displays the sum on screen
 # print("The total of your two numbers is:", sum)
+
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # # Having fun with seconds in a function
 
@@ -26,6 +31,7 @@
 # bleh, blah, bluh = convert_seconds(5000)
 # print(bleh, blah, bluh)
 
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # def hint_username(username):
 #     if len(username) < 3 :
@@ -35,6 +41,8 @@
 
 # hint_username("12")
 # hint_username("123")
+
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # def numcheck(number):
 #     if number > 11: 
@@ -48,6 +56,7 @@
 
 # numcheck(10)
 
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # # Playing with modulos and interesting formats.
 # def calculate_storage(filesize):
@@ -68,6 +77,7 @@
 # print(calculate_storage(4097)) # Should be 8192
 # print(calculate_storage(6000)) # Should be 8192
 
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # # Double functions
 # def sum(x, y):
@@ -75,6 +85,7 @@
 
 # print(sum(sum(1,2), sum(3,4)))
 
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # # A while loop, basic. 
 # x = 0
@@ -82,6 +93,8 @@
 #     print("Not quite there yet, x is equal to:", str(x))
 #     x = x + 1
 # print("X is equal to:", str(x))
+
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # # A while loop making sure to re-asign variable prior to use. 
 # x = 1
@@ -98,9 +111,13 @@
 
 # print(sum, product)
 
+#--------------------------------------------------------------------------------------------------------------------------------
+
 #  For loop examples. 
 # for x in range(5):
 #     print(x)
+
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # For loop in a function
 # def printFive():
@@ -108,6 +125,8 @@
 #         print("hi", x)
 
 # printFive()
+
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # An example using an array of numbers
 # values = [ 23,51,64,25,99,65 ]
@@ -118,6 +137,7 @@
 #     length += 1
 # print("Total sum: " + str(sum) +"\n Average: " + str(sum/length))
 
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # A for loop that jumps each 10th number and uses a function
 # def to_celsius(x):
@@ -126,9 +146,13 @@
 # for x in range(0,101,10): # The 3rd argument here is what defined how many numbers to jump in the range of the first two arguments. IMPORTANT: range doesnt include the last element. So the last number should be 1 more than intention.
 #   print(x, to_celsius(x))
 
+#--------------------------------------------------------------------------------------------------------------------------------
+
 # If we want to count backwards we have to use the 3rd argument to tell the for loop to look for a negative number range.
 # for x in range(1, -11, -1):
 #     print(x) # Prints 1 to -10
+
+#--------------------------------------------------------------------------------------------------------------------------------
 
 # Lets make some dominoes
 # for left in range(7):
@@ -136,9 +160,23 @@
 #         print("[" + str(left) + "|" + str(right) + "]", end=" ") # The end argument here defines how the print function will end. By default it makes a newline. Where now we define the newline character to be a space. 
 #     print()
 
+#--------------------------------------------------------------------------------------------------------------------------------
+
 # Making a nested loop for pairings of names in all orders whilst not repeating same name against itself. 
-teams = [ "Pandas", "Tigers", "Bears", "Eagles"]
-for home_team in teams:
-    for away_teams in teams:
-        if home_team != away_teams:
-            print(home_team + " vs " + away_teams)
+# teams = [ "Pandas", "Tigers", "Bears", "Eagles"]
+# for home_team in teams:
+#     for away_teams in teams:
+#         if home_team != away_teams:
+#             print(home_team + " vs " + away_teams)
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+# Some slicing using a colon
+# string1 = "Greetings, Earthlings" # One long string
+# print(string1[0])   # Prints “G”
+# print(string1[4:8]) # Prints “ting”
+# print(string1[11:]) # Prints “Earthlings”
+# print(string1[:5])  # Prints “Greet”
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
