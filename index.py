@@ -99,5 +99,29 @@
 # print(sum, product)
 
 #  For loop examples. 
-for x in range(5):
-    print(x)
+# for x in range(5):
+#     print(x)
+
+# For loop in a function
+# def printFive():
+#     for x in range(5):
+#         print("hi", x)
+
+# printFive()
+
+# An example using an array of numbers
+# values = [ 23,51,64,25,99,65 ]
+# sum = 0
+# length = 0
+# for value in values:
+#     sum += value
+#     length += 1
+# print("Total sum: " + str(sum) +"\n Average: " + str(sum/length))
+
+
+# A for loop that jumps each 10th number and uses a function
+def to_celsius(x):
+  return (x-32)*5/9
+
+for x in range(0,101,10): # The 3rd argument here is what defined how many numbers to jump in the range of the first two arguments. 
+  print(x, to_celsius(x))
