@@ -120,8 +120,12 @@
 
 
 # A for loop that jumps each 10th number and uses a function
-def to_celsius(x):
-  return (x-32)*5/9
+# def to_celsius(x):
+#   return (x-32)*5/9
 
-for x in range(0,101,10): # The 3rd argument here is what defined how many numbers to jump in the range of the first two arguments. 
-  print(x, to_celsius(x))
+# for x in range(0,101,10): # The 3rd argument here is what defined how many numbers to jump in the range of the first two arguments. IMPORTANT: range doesnt include the last element. So the last number should be 1 more than intention.
+#   print(x, to_celsius(x))
+
+# If we want to count backwards we have to use the 3rd argument to tell the for loop to look for a negative number range.
+for x in range(1, -11, -1):
+    print(x) # Prints 1 to -10
