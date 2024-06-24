@@ -131,7 +131,14 @@
 #     print(x) # Prints 1 to -10
 
 # Lets make some dominoes
-for left in range(7):
-    for right in range(left, 7):
-        print("[" + str(left) + "|" + str(right) + "]", end=" ") # The end argument here defines how the print function will end. By default it makes a newline. Where now we define the newline character to be a space. 
-    print()
+# for left in range(7):
+#     for right in range(left, 7):
+#         print("[" + str(left) + "|" + str(right) + "]", end=" ") # The end argument here defines how the print function will end. By default it makes a newline. Where now we define the newline character to be a space. 
+#     print()
+
+# Making a nested loop for pairings of names in all orders whilst not repeating same name against itself. 
+teams = [ "Pandas", "Tigers", "Bears", "Eagles"]
+for home_team in teams:
+    for away_teams in teams:
+        if home_team != away_teams:
+            print(home_team + " vs " + away_teams)
