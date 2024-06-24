@@ -75,8 +75,29 @@
 
 # print(sum(sum(1,2), sum(3,4)))
 
-x = 0
-while x < 5:
-    print("Not quite there yet, x is equal to:", str(x))
-    x = x + 1
-print("X is equal to:", str(x))
+
+# # A while loop, basic. 
+# x = 0
+# while x < 5:
+#     print("Not quite there yet, x is equal to:", str(x))
+#     x = x + 1
+# print("X is equal to:", str(x))
+
+# # A while loop making sure to re-asign variable prior to use. 
+# x = 1
+# sum = 0
+# while x < 10:
+#     sum = sum + x
+#     x = x + 1
+
+# product = 1
+# x = 1 # X is re-asigned here so It can be properly used. 
+# while x < 10:
+#     product = product * x
+#     x = x + 1
+
+# print(sum, product)
+
+#  For loop examples. 
+for x in range(5):
+    print(x)
