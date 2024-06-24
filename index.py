@@ -127,5 +127,11 @@
 #   print(x, to_celsius(x))
 
 # If we want to count backwards we have to use the 3rd argument to tell the for loop to look for a negative number range.
-for x in range(1, -11, -1):
-    print(x) # Prints 1 to -10
+# for x in range(1, -11, -1):
+#     print(x) # Prints 1 to -10
+
+# Lets make some dominoes
+for left in range(7):
+    for right in range(left, 7):
+        print("[" + str(left) + "|" + str(right) + "]", end=" ") # The end argument here defines how the print function will end. By default it makes a newline. Where now we define the newline character to be a space. 
+    print()
