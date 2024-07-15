@@ -205,3 +205,16 @@
 #     print(c)
 
 #--------------------------------------------------------------------------------------------------------------------------------
+
+# String methods, replacement with slice method.
+# def replace_domain(email, old_domain, new_domain):
+#   if "@" + old_domain in email:
+#     index = email.index("@" + old_domain)
+#     print(index)
+#     new_email = email[:index] + "@" + new_domain
+#     return print(new_email)
+#   return email
+
+# replace_domain('lad_777@mail.com', 'mail.com', 'hotmail.com')
+
+#--------------------------------------------------------------------------------------------------------------------------------
