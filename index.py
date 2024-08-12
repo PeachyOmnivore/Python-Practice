@@ -219,17 +219,32 @@
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
-def create_staircase(nums):
-  while len(nums) != 0:
-    step = 1
-    subsets = []
-    if len(nums) >= step:
-      subsets.append(nums[0:step])
-      nums = nums[step:]
-      step += 1
-    else:
-      return False
+# def create_staircase(nums):
+#   while len(nums) != 0:
+#     step = 1
+#     subsets = []
+#     if len(nums) >= step:
+#       subsets.append(nums[0:step])
+#       nums = nums[step:]
+#       step += 1
+#     else:
+#       return False
 
-  return subsets
+#   return subsets
 
-print(create_staircase([1, 2, 3, 4, 5, 6, 7]))
+# print(create_staircase([1, 2, 3, 4, 5, 6, 7]))
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+#  An example of using enumerate, this allows us to unpack both the names in winners with its coorisponding index. 
+# winners = ["Ashley", "John", "Fred"]
+# for index, winner in enumerate(winners):
+#     print("{} - {}".format(index+1, winner))
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+# # An Example of list comprehension:
+# mulitpleOfSeven = [x*7 for x in range(1,11)]
+# print(mulitpleOfSeven)
+
+#--------------------------------------------------------------------------------------------------------------------------------
