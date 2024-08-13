@@ -243,8 +243,54 @@
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
-# # An Example of list comprehension:
+# # An Example of list comprehensions:
 # mulitpleOfSeven = [x*7 for x in range(1,11)]
 # print(mulitpleOfSeven)
+
+
+# languages = ["Python", "Go", "Java", "Perl", "C"]
+# lengths = [len(lang) for lang in languages]
+# print(lengths)
+
+
+# Prints values of 3 in a comprehension
+# z = [x  for x in range(1,101) if x % 3 == 0]
+# print(z)
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+# def pig_latin(text):
+#   say = ""
+#   # Separate the text into words
+#   words = text.split()
+#   print(words)
+#   for word in words:
+#     # Create the pig latin word and add it to the list
+#     firstChar = word[0]
+#     word.remove(word[0])
+#     word.append(firstChar + "lay")
+#     say.append(word)
+#     # Turn the list back into a phrase
+#   return say
+    
+# print(pig_latin("hello how are you")) # Should be "ellohay owhay reaay ouyay"
+# print(pig_latin("programming in python is fun"))
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+#  a function that runs through a dictionary of groups and users. Then collates users to specific groups in a new dictionary. 
+
+def groups_per_user(group_dictionary):
+	user_groups = {}
+	for group, users in group_dictionary.items():
+		for user in users:
+			if user not in user_groups:
+				user_groups[user] = []
+			user_groups[user].append(group)
+	return(user_groups)
+
+print(groups_per_user({"local": ["admin", "userA"],
+		"public":  ["admin", "userB"],
+		"administrator": ["admin"] }))
 
 #--------------------------------------------------------------------------------------------------------------------------------
